@@ -414,13 +414,6 @@ a.btn-elite-secondary {
   color: var(--star-white);
 }
 
-.service-card-elite p {
-  color: var(--metal-gray);
-  margin-bottom: 0.5rem;
-  line-height: 1.7;
-  font-weight: 300;
-}
-
 .service-cta {
   display: flex;
   align-items: center;
