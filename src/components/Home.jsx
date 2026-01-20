@@ -233,8 +233,12 @@ const Home = () => {
     <div className="cta-grid"></div>
   </div>
 
-  <div className="cta-content-elite">
-    <h2>CONTACTO</h2>
+ <div className="cta-content-elite">
+  <div className="section-header-elite">
+    <h2 className="section-title-elite">CONTACTO</h2>
+    <div className="title-underline"></div>
+  </div>
+
     <p>
       Podés escribirme por WhatsApp o por correo electrónico. Respondo a la brevedad.
     </p>
