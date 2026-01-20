@@ -402,6 +402,14 @@ a.btn-elite-secondary {
   opacity: 1;
 }
 
+.service-card-elite p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  flex: 1;
+}
+
+
 .service-icon-elite {
   position: relative;
   width: 70px;
@@ -501,18 +509,6 @@ a.btn-elite-secondary {
   font-weight: 400;
 }
 
-.service-card-elite p {
-  color: var(--metal-gray);
-  margin-bottom: 2rem;
-  line-height: 1.7;
-  font-weight: 300;
-
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-
-  flex: 1;
-}
 
 /* About Section */
 .about-elite {
