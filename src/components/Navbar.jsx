@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isHidden ? 'navbar--hidden' : ''}`}>
       <div className="navbar-container">
-        <a className="navbar-brand" href="#hero">Roberto Coutenceau</a>
+        <a className="navbar-brand" href="#hero">Roberto Gaston Coutenceau</a>
 
         <ul className="navbar-menu">
           <li><a href="#hero" className="navbar-link">Inicio</a></li>
