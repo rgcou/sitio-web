@@ -798,3 +798,23 @@ a.btn-elite-secondary {
     font-size: 2.5rem;
   }
 }
+
+/* Para que el <a> con clase btn-elite-primary se comporte como botón */
+a.btn-elite-primary,
+a.btn-elite-secondary {
+  text-decoration: none;
+}
+
+/* Evita que el efecto hover bloquee el click */
+.btn-hover-effect {
+  pointer-events: none;
+}
+
+.whatsapp-icon {
+  width: 26px;
+  height: 26px;
+  margin-left: 12px;
+  flex: 0 0 auto;
+}
+
+
