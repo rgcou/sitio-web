@@ -200,6 +200,20 @@ h1, h2, h3, h4 {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Cuando el "botón" es un link */
+a.btn-elite-primary,
+a.btn-elite-secondary {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* En tu caso, el CTA es columna: esto evita que el link se estire raro */
+.cta-buttons-elite .btn-elite-primary {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .hero-visual-elite {
   flex: 1;
   display: flex;
