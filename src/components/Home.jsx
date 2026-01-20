@@ -57,30 +57,17 @@ const Home = () => {
         
         <div className="hero-content-elite">
           <div className={`hero-text-elite ${isVisible ? 'fade-in-up' : ''}`}>
-            <div className="logo-container">
-              <img 
-                src="https://res.cloudinary.com/dqgjcfosx/image/upload/v1756755958/ChatGPT_Image_1_sept_2025_04_43_40_p.m._g3zz70.png" 
-                alt="HARMONY - Estudio de Abogados" 
-                className="elite-logo"
-              />
-            </div>
+           
             <h1 className="hero-title-elite">
-              <span className="title-line">PROTECCIÓN LEGAL</span>
-              <span className="title-line">EN LA ERA DIGITAL</span>
+              <span className="title-line">Abogado especializado</span>
+              <span className="title-line">en derecho digital y administrativo</span>
             </h1>
             <p className="hero-subtitle-elite">
-              Defendemos sus datos con precisión legal y tecnológica. 
-              Soluciones avanzadas para riesgos digitales complejos.
+              Brindo asesoramiento legal en materia de derecho digital, 
+              de datos personales y administrativo para personas físicas, 
+              comercios, pymes y organizaciones civiles.
             </p>
-            <div className="hero-buttons-elite">
-              <button className="btn-elite-primary" onClick={() => scrollToSection('services')}>
-                <span>Explorar Servicios</span>
-                <div className="btn-hover-effect"></div>
-              </button>
-              <button className="btn-elite-secondary" onClick={() => scrollToSection('contact')}>
-                <span>Consulta Inmediata</span>
-              </button>
-            </div>
+           
           </div>
           
           <div className="hero-visual-elite">
@@ -93,140 +80,151 @@ const Home = () => {
           </div>
         </div>
         
-        <div className="scroll-indicator">
-          <div className="scroll-line"></div>
-          <span>DESCUBRE MÁS</span>
-        </div>
+        
       </section>
 
       {/* Services Section */}
       <section id="services" ref={sectionRefs.services} className="services-elite">
         <div className="section-header-elite">
           <h2 className="section-title-elite">SERVICIOS ESPECIALIZADOS</h2>
-          <p className="section-subtitle-elite">Soluciones legales avanzadas para entornos digitales complejos</p>
+         
           <div className="title-underline"></div>
         </div>
         
         <div className="services-grid-elite">
-          <div className="service-card-elite">
-            <div className="service-icon-elite">
-              <div className="hexagon"></div>
-              <span>🔒</span>
-            </div>
-            <h3>Protección de Datos</h3>
-            <p>Cumplimiento normativo GDPR, LOPD, CCPA y regulaciones internacionales con enfoque preventivo.</p>
-            <div className="service-cta">
-              <span>Más información</span>
-              <div className="arrow-line"></div>
-            </div>
-          </div>
-          
-          <div className="service-card-elite">
-            <div className="service-icon-elite">
-              <div className="hexagon"></div>
-              <span>⚖️</span>
-            </div>
-            <h3>Litigio Digital</h3>
-            <p>Representación legal especializada en brechas de seguridad y violaciones de datos personales.</p>
-            <div className="service-cta">
-              <span>Más información</span>
-              <div className="arrow-line"></div>
-            </div>
-          </div>
-          
-          <div className="service-card-elite">
-            <div className="service-icon-elite">
-              <div className="hexagon"></div>
-              <span>🌐</span>
-            </div>
-            <h3>Auditoría Cibernética</h3>
-            <p>Evaluación exhaustiva de sistemas y procesos para identificar vulnerabilidades legales y técnicas.</p>
-            <div className="service-cta">
-              <span>Más información</span>
-              <div className="arrow-line"></div>
-            </div>
-          </div>
-        </div>
+
+  <div className="service-card-elite">
+    <div className="service-icon-elite">
+      <div className="hexagon"></div>
+      <span>📹</span>
+    </div>
+    <h3>Videovigilancia</h3>
+    <p>
+      Regularización legal de sistemas de cámaras en comercios, consorcios y organizaciones.
+      Incluye manual/política, cartelería y gestión de registro/adecuación cuando corresponda.
+    </p>
+  </div>
+
+  <div className="service-card-elite">
+    <div className="service-icon-elite">
+      <div className="hexagon"></div>
+      <span>🗂️</span>
+    </div>
+    <h3>Bases de datos</h3>
+    <p>
+      Relevamiento de bases (clientes, empleados, proveedores), adecuación documental y
+      registro/actualización ante la autoridad cuando corresponda, con textos de información
+      y procedimiento básico para ejercicio de derechos.
+    </p>
+  </div>
+
+  <div className="service-card-elite">
+    <div className="service-icon-elite">
+      <div className="hexagon"></div>
+      <span>🌍</span>
+    </div>
+    <h3>Transferencias internacionales y proveedores</h3>
+    <p>
+      Revisión de flujos de datos y contratos con proveedores (cloud, SaaS, etc.),
+      verificación de requisitos mínimos y documentación contractual necesaria para
+      transferir datos personales al exterior.
+    </p>
+  </div>
+
+  <div className="service-card-elite">
+    <div className="service-icon-elite">
+      <div className="hexagon"></div>
+      <span>🧾</span>
+    </div>
+    <h3>Ejercicio de derechos</h3>
+    <p>
+      Representación de personas que necesiten ejercer derechos con relación a datos personales
+      en manos de terceros.
+    </p>
+  </div>
+
+  <div className="service-card-elite">
+    <div className="service-icon-elite">
+      <div className="hexagon"></div>
+      <span>🌐</span>
+    </div>
+    <h3>Compliance web</h3>
+    <p>
+      Asesoramiento legal y técnico si necesitás cumplir con estándares argentinos y/o europeos
+      en materia de adecuación de tu sitio web.
+    </p>
+  </div>
+
+  <div className="service-card-elite">
+    <div className="service-icon-elite">
+      <div className="hexagon"></div>
+      <span>⚖️</span>
+    </div>
+    <h3>Asesoramiento general</h3>
+    <p>
+      Acompañamiento en cuestiones frecuentes de derecho digital y derecho administrativo,
+      con enfoque práctico y verificable.
+    </p>
+  </div>
+
+</div>
       </section>
 
-      {/* Stats Section */}
-      <section className="stats-elite">
-        <div className="stats-container-elite">
-          <div className="stat-item-elite">
-            <div className="stat-number-elite" data-count="500">0</div>
-            <div className="stat-label-elite">Casos Resueltos</div>
-          </div>
-          <div className="stat-item-elite">
-            <div className="stat-number-elite" data-count="98">0</div>
-            <div className="stat-label-elite">Éxito en Litigios</div>
-          </div>
-          <div className="stat-item-elite">
-            <div className="stat-number-elite" data-count="15">0</div>
-            <div className="stat-label-elite">Años de Experiencia</div>
-          </div>
-          <div className="stat-item-elite">
-            <div className="stat-number-elite" data-count="360">0</div>
-            <div className="stat-label-elite">Protección Integral</div>
-          </div>
-        </div>
-      </section>
+      
+     {/* About Section */}
+<section id="about" ref={sectionRefs.about} className="about-elite">
+  <div className="about-container-elite">
+    <div className="about-content-elite">
+      <div className="section-header-elite">
+        <h2 className="section-title-elite">Sobre mí</h2>
+        <div className="title-underline"></div>
+      </div>
 
-      {/* About Section */}
-      <section id="about" ref={sectionRefs.about} className="about-elite">
-        <div className="about-container-elite">
-          <div className="about-content-elite">
-            <div className="section-header-elite">
-              <h2 className="section-title-elite">ENFOQUE HARMONY</h2>
-              <p className="section-subtitle-elite">Fusión perfecta entre expertise legal y tecnológico</p>
-              <div className="title-underline"></div>
-            </div>
-            
-            <p className="about-text-elite">
-              En HARMONY, redefinimos la protección legal de datos mediante la integración de 
-              conocimientos jurídicos profundos con comprensión técnica avanzada. Nuestro equipo 
-              multidisciplinario combina abogados especializados y expertos en ciberseguridad 
-              para ofrecer soluciones integrales.
-            </p>
-            
-            <div className="approach-list-elite">
-              <div className="approach-item-elite">
-                <div className="approach-number">01</div>
-                <div className="approach-content">
-                  <h4>Prevención Estratégica</h4>
-                  <p>Implementación de protocolos proactivos para minimizar riesgos legales.</p>
-                </div>
-              </div>
-              
-              <div className="approach-item-elite">
-                <div className="approach-number">02</div>
-                <div className="approach-content">
-                  <h4>Respuesta Inmediata</h4>
-                  <p>Actuación rápida y decisiva ante incidentes de seguridad y violaciones.</p>
-                </div>
-              </div>
-              
-              <div className="approach-item-elite">
-                <div className="approach-number">03</div>
-                <div className="approach-content">
-                  <h4>Innovación Continua</h4>
-                  <p>Adaptación constante a la evolución normativa y tecnológica.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="about-visual-elite">
-            <div className="floating-cube">
-              <div className="cube-face front"></div>
-              <div className="cube-face back"></div>
-              <div className="cube-face right"></div>
-              <div className="cube-face left"></div>
-              <div className="cube-face top"></div>
-              <div className="cube-face bottom"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="about-text-elite">
+        <p>Soy abogado con foco en derecho digital, protección de datos personales y derecho administrativo.</p>
+
+        <p>
+          A lo largo de mi trayectoria trabajé en el sector público, con experiencia en los tres poderes del Estado
+          (Legislativo, Ejecutivo y Judicial), realizando tareas de formulación y emisión de dictámenes en causas
+          judiciales, examen de la adecuación normativa del accionar de funcionarios públicos, confección,
+          redacción, análisis y asesoramiento de proyectos de ley en materia de derecho administrativo y de
+          protección de datos personales, entre otras.
+        </p>
+
+        <p>
+          Cursé y aprobé todas las materias de la maestría en derecho administrativo, quedándome la tesis pendiente
+          debido a que decidí iniciar estudios en Ciencia de Datos en la UBA, carrera que curso actualmente
+          (nivel intermedio), lo que me permite traducir problemas legales a procesos concretos y verificables.
+        </p>
+
+        <p>
+          Hoy acompaño a personas, comercios, pymes y organizaciones en la regularización práctica de situaciones
+          frecuentes: videovigilancia, registro y adecuación de bases de datos, transferencias
+          internacionales/proveedores y ejercicio de derechos.
+        </p>
+
+        <p>
+          Mi forma de trabajo se basa en la ética, discreción, sobriedad y el respeto a mis clientes. Cuando el caso
+          lo requiere, coordino con especialistas técnicos.
+        </p>
+
+        <p>También publico contenidos en YouTube sobre derecho digital y protección de datos.</p>
+      </div>
+    </div> {/* ✅ cierra about-content-elite */}
+
+    <div className="about-visual-elite">
+      <div className="floating-cube">
+        <div className="cube-face front"></div>
+        <div className="cube-face back"></div>
+        <div className="cube-face right"></div>
+        <div className="cube-face left"></div>
+        <div className="cube-face top"></div>
+        <div className="cube-face bottom"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section id="contact" ref={sectionRefs.contact} className="cta-elite">
