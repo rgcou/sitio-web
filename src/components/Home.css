@@ -497,11 +497,24 @@ h1, h2, h3, h4 {
 
 .about-text-elite {
   color: var(--metal-gray);
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 3rem;
+  font-size: 1.05rem;
+  line-height: 1.85;
   font-weight: 300;
+
+  max-width: 68ch;          /* ancho cómodo para lectura */
+  text-align: justify;      /* justificado */
+  text-justify: inter-word;
 }
+
+
+.about-text-elite p {
+  margin: 0 0 14px 0;       /* separación entre párrafos */
+}
+
+.about-text-elite p:last-child {
+  margin-bottom: 0;
+}
+
 
 .approach-list-elite {
   display: flex;
