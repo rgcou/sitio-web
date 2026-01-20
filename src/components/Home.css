@@ -680,11 +680,11 @@ a.btn-elite-secondary {
   margin: 0 auto;
 }
 
-.cta-content-elite h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
+/* En CTA usamos el mismo header que el resto */
+.cta-elite .section-header-elite {
+  margin-bottom: 3rem;
 }
+
 
 .cta-content-elite p {
   color: var(--metal-gray);
