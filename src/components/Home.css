@@ -51,7 +51,7 @@ h1, h2, h3, h4 {
 
 /* Hero Section - Estilo Élite */
 .hero-elite {
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
