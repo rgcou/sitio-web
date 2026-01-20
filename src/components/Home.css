@@ -1,4 +1,4 @@
-/* Variables de colores inspirados en SpaceX - Élite Profesional */
+d/* Variables de colores inspirados en SpaceX - Élite Profesional */
 :root {
   --space-black: #0a0a0f;
   --deep-space: #12121d;
@@ -354,6 +354,8 @@ a.btn-elite-secondary {
   gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
+
+  align-items: stretch;
 }
 
 .service-card-elite {
@@ -365,7 +367,12 @@ a.btn-elite-secondary {
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 360px; /* ajustá si querés: 340 / 380 / 400 */
 }
+
 
 .service-card-elite::before {
   content: '';
