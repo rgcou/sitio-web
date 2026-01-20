@@ -1,56 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 
 const Home = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [activeSection, setActiveSection] = useState('hero');
-  const sectionRefs = {
-    hero: useRef(null),
-    services: useRef(null),
-    about: useRef(null),
-    cases: useRef(null),
-    contact: useRef(null)
-  };
+    const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-    
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5
-    };
-    
-    const observerCallback = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    };
-    
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-    
-    Object.values(sectionRefs).forEach(ref => {
-      if (ref.current) observer.observe(ref.current);
-    });
-    
-    return () => {
-      Object.values(sectionRefs).forEach(ref => {
-        if (ref.current) observer.unobserve(ref.current);
-      });
-    };
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    sectionRefs[sectionId].current?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div className="home-elite">
       
       {/* Hero Section */}
-      <section id="hero" ref={sectionRefs.hero} className="hero-elite">
+<section id="hero" className="hero-elite">
         <div className="hero-background">
           <div className="particles-container" id="particles-js"></div>
           <div className="grid-lines"></div>
@@ -85,7 +48,7 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" ref={sectionRefs.services} className="services-elite">
+      <section id="services" className="services-elite">
         <div className="section-header-elite">
           <h2 className="section-title-elite">SERVICIOS ESPECIALIZADOS</h2>
          
@@ -173,7 +136,7 @@ const Home = () => {
 
       
      {/* About Section */}
-<section id="about" ref={sectionRefs.about} className="about-elite">
+<section id="about" className="about-elite">
   <div className="about-container-elite">
     <div className="about-content-elite">
       <div className="section-header-elite">
@@ -228,7 +191,7 @@ const Home = () => {
 
 
      {/* Contact Section */}
-<section id="contact" ref={sectionRefs.contact} className="cta-elite">
+<section id="contact" className="cta-elite">
   <div className="cta-background-elite">
     <div className="cta-grid"></div>
   </div>
