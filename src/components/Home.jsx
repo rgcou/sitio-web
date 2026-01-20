@@ -48,6 +48,7 @@ const Home = () => {
 
   return (
     <div className="home-elite">
+      
       {/* Hero Section */}
       <section id="hero" ref={sectionRefs.hero} className="hero-elite">
         <div className="hero-background">
@@ -226,28 +227,38 @@ const Home = () => {
 </section>
 
 
-      {/* CTA Section */}
-      <section id="contact" ref={sectionRefs.contact} className="cta-elite">
-        <div className="cta-background-elite">
-          <div className="cta-grid"></div>
-        </div>
-        
-        <div className="cta-content-elite">
-          <h2>¿LISTO PARA PROTEGER SU EMPRESA?</h2>
-          <p>Nuestro equipo de expertos está preparado para evaluar su situación y diseñar una estrategia legal personalizada.</p>
-          
-          <div className="cta-buttons-elite">
-            <button className="btn-elite-primary">
-              <span>Solicitar Evaluación</span>
-              <div className="btn-hover-effect"></div>
-            </button>
-            <div className="cta-contact-info">
-              <span>O llámenos directamente</span>
-              <a href="tel:+34000000000">+34 900 000 000</a>
-            </div>
-          </div>
-        </div>
-      </section>
+     {/* Contact Section */}
+<section id="contact" ref={sectionRefs.contact} className="cta-elite">
+  <div className="cta-background-elite">
+    <div className="cta-grid"></div>
+  </div>
+
+  <div className="cta-content-elite">
+    <h2>CONTACTO</h2>
+    <p>
+      Podés escribirme por WhatsApp o por correo electrónico. Respondo a la brevedad.
+    </p>
+
+    <div className="cta-buttons-elite">
+      <a
+        className="btn-elite-primary"
+        href="https://wa.me/5491176016251"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Contactar por WhatsApp"
+      >
+        <span>WhatsApp</span>
+        <span style={{ marginLeft: 10 }}>📱</span>
+        <div className="btn-hover-effect"></div>
+      </a>
+
+      <div className="cta-contact-info">
+        <span>Correo</span>
+        <a href="mailto:rgcou@proton.me">rgcou@proton.me</a>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 };
