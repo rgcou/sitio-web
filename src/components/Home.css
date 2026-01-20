@@ -142,7 +142,12 @@ h1, h2, h3, h4 {
   line-height: 1.8;
   max-width: 90%;
   font-weight: 300;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
+
 
 .hero-buttons-elite {
   display: flex;
