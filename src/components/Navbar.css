@@ -247,3 +247,253 @@ section {
 .navbar {
   animation: slideInDown 0.5s ease-out;
 }
+
+/* Variables de colores (consistentes con Home.css) */
+:root {
+  --navbar-bg: rgba(10, 10, 18, 0.95);
+  --navbar-border: rgba(99, 102, 241, 0.2);
+  --navbar-text: #f8fafc;
+  --navbar-text-hover: #818cf8;
+  --navbar-height: 80px;
+  --navbar-height-mobile: 70px;
+  --transition: all 0.3s ease;
+}
+
+/* Navbar principal */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--navbar-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--navbar-border);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 0 5%;
+  overflow: visible; /* Permite que el logo sobresalga */
+}
+
+.navbar--hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  overflow: visible;
+}
+
+.logo-image {
+  height: 120px; /* logo más grande */
+  width: auto;
+  max-height: 150px; /* límite para no deformar demasiado */
+  transition: var(--transition);
+  filter: brightness(0) invert(1); /* Hace el logo blanco */
+  margin-top: 10px; /* pequeño ajuste para que no desplace el navbar */
+}
+
+.logo-image:hover {
+  filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(230deg);
+}
+
+/* Menú de navegación */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: var(--navbar-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: var(--transition);
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient);
+  transition: var(--transition);
+}
+
+.navbar-link:hover {
+  color: var(--navbar-text-hover);
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Botones */
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.navbar-btn--primary {
+  background: var(--gradient);
+  color: white;
+  box-shadow: var(--glow);
+}
+
+.navbar-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* Toggle móvil (hamburguesa) */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.navbar-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--navbar-text);
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+.navbar-toggle--active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-toggle--active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle--active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar-menu {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    height: var(--navbar-height-mobile);
+    padding: 0 1.5rem;
+  }
+  
+  .logo-image {
+    height: 80px; /* más chico en móvil */
+    margin-top: 5px;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-dark);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .navbar-menu--active {
+    transform: translateX(0);
+  }
+  
+  .navbar-link {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+  }
+  
+  .navbar-toggle {
+    display: flex;
+  }
+  
+  .navbar-buttons {
+    display: none;
+  }
+  
+  .navbar-menu--active ~ .navbar-buttons {
+    display: flex;
+    position: fixed;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    z-index: 1001;
+  }
+}
+
+/* Efectos de scroll suave para los enlaces */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ajuste para que el contenido no quede oculto detrás del navbar */
+section {
+  scroll-margin-top: var(--navbar-height);
+}
+
+@media (max-width: 900px) {
+  section {
+    scroll-margin-top: var(--navbar-height-mobile);
+  }
+}
+
+/* Animación de entrada para el navbar */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: slideInDown 0.5s ease-out;
+}
