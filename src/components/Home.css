@@ -11,14 +11,19 @@ d/* Variables de colores inspirados en SpaceX - Élite Profesional */
   --electric-purple: #a855f7;
   --metal-gray: #9ca3af;
   --success-green: #10b981;
-  
+
   --gradient-elite: linear-gradient(135deg, var(--nebula-purple), var(--tech-blue));
-  --gradient-subtle: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(59, 130, 246, 0.1));
+  --gradient-subtle: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.1),
+    rgba(59, 130, 246, 0.1)
+  );
   --glow-elite: 0 0 15px rgba(99, 102, 241, 0.4);
-  
+
   --font-primary: 'Inter', 'Helvetica Neue', sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', monospace;
 }
+
 
 /* Reset y estilos base */
 * {
