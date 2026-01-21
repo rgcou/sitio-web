@@ -10,14 +10,21 @@ const Home = () => {
 
 
   return (
-      <footer className="footer-elite">
-  <div className="footer-inner-elite">
-    <span className="footer-brand">© {new Date().getFullYear()} Roberto Gastón Coutenceau</span>
-    <a className="footer-link-elite" href="/politica-de-privacidad.html">
-      Política de Privacidad
-    </a>
+  <div className="home-elite">
+    {/* ... TODO tu contenido ... */}
+
+    <footer className="footer-elite">
+      <a
+        href="/politica-de-privacidad.html"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Política de privacidad
+      </a>
+    </footer>
   </div>
-</footer>
+);
+
 
     <div className="home-elite">
       
