@@ -11,8 +11,6 @@ const Home = () => {
 
   return (
   <div className="home-elite">
-    {/* ... TODO tu contenido ... */}
-
     <footer className="footer-elite">
       <a
         href="/politica-de-privacidad.html"
