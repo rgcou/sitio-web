@@ -29,7 +29,11 @@ const Home = () => {
             <p className="hero-subtitle-elite">
               Brindo asesoramiento legal en materia de derecho digital, 
               de datos personales y administrativo para personas físicas, 
-              comercios, pymes y organizaciones civiles.
+              comercios, pymes y organizaciones civiles en la Ciudad 
+              de Buenos Aires.
+              Consultar por casos en Provincia de Buenos Aires para derivación a 
+              abogados matriculados en dicha jurisdicción.
+              
             </p>
            
           </div>
