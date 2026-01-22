@@ -868,5 +868,11 @@ a.btn-elite-secondary {
   color: var(--star-white);
 }
 
+:root { --nav-h: 90px; }
+
+@media (max-width: 768px) {
+  .hero-elite { padding-top: var(--nav-h); }
+}
+
 
 
