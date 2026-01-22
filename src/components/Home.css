@@ -871,7 +871,8 @@ a.btn-elite-secondary {
 :root { --nav-h: 90px; }
 
 @media (max-width: 768px) {
-  .hero-elite { padding-top: var(--nav-h); }
+  .hero-elite {padding-top: var(--nav-h);
+              min-height: calc(85vh + var(--nav-h));}
 }
 
 
